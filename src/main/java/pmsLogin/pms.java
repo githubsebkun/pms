@@ -17,7 +17,7 @@ public class pms {
     public pms(WebDriver driver) {
         this.driver = driver;
         //driver.manage().window().maximize();
-        baseUrl = "http://localhost:8080/pms1";
+        baseUrl = "http://localhost:8080/pms";
         driver.get(baseUrl + "/");
         WebElement myDynamicElement = (new WebDriverWait(driver, 10))
                 .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#loginForm1")));
