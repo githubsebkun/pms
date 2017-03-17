@@ -22,7 +22,7 @@ public class pms {
         WebElement myDynamicElement = (new WebDriverWait(driver, 10))
                 .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#loginForm1")));
         if (!driver.getTitle().equals("PMS-Parish Management System")) {
-            throw new WrongPageException("Incorrect page for PMS login");
+            throw new WrongPageException("Incorrect page for PMS login Check your page");
         }
     }
     public CheckLoginPage trylogin(String uid, String pwd) throws Exception {
